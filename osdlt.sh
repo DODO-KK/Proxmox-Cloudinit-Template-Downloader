@@ -13,6 +13,7 @@ os_images_ordered=(
   "Debian 10 EOL-No Support"
   "Debian 11"
   "Debian 12"
+  "Debian 13"
   "Ubuntu Server 20.04"
   "Ubuntu Server 22.04"
   "Alma Linux 8"
@@ -25,9 +26,10 @@ os_images_ordered=(
 )
 
 declare -A os_images=(
-  ["Debian 10 EOL-No Support"]="https://cloud.debian.org/images/cloud/buster/latest/debian-10-generic-amd64.qcow2"
-  ["Debian 11"]="https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.qcow2"
-  ["Debian 12"]="https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2"
+  ["Debian 10 EOL-No Support"]="https://cloud.debian.org/images/cloud/buster/latest/debian-10-genericcloud-amd64.qcow2"
+  ["Debian 11"]="https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-genericcloud-amd64.qcow2"
+  ["Debian 12"]="https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.qcow2"
+  ["Debian 13"]="https://cloud.debian.org/images/cloud/trixie/daily/20240424-1727/debian-13-genericcloud-amd64-daily-20240424-1727.qcow2"
   ["Ubuntu Server 20.04"]="https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img"
   ["Ubuntu Server 22.04"]="https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img"
   ["Alma Linux 8"]="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-latest.x86_64.qcow2"
