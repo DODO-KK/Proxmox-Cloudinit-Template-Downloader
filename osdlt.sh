@@ -195,7 +195,7 @@ while true; do
           done
         fi
 
-        if virt-customize -a "/var/tmp/image.qcow2" --run-command "sed -i '/^#PasswordAuthentication[[:space:]]/c\PasswordAuthentication yes' /etc/ssh/sshd_config" --run-command "sed -i '/^PasswordAuthentication no/c\PasswordAuthentication yes' /etc/ssh/sshd_config"; then
+        if virt-customize -a "/var/tmp/image.qcow2" --run-command "sed -i '/^#PasswordAuthentication[[:space:]]/c\PasswordAuthentication yes' /etc/ssh/sshd_config" --run-command "sed -i '/^PasswordAuthentication no/c\PasswordAuthentication yes' /etc/ssh/sshd_config" --run-command "sed -i '/^#PermitRootLogin[[:space:]]*prohibit-password/c\PermitRootLogin yes' /etc/ssh/sshd_config" \ ; then
           echo "PasswordAuthentication has been successfully allowed in the image."
         else
           echo "Failed to set up SSH PasswordAuthentication."
